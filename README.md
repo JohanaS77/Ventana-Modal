@@ -69,6 +69,19 @@ El proyecto consiste en la **creación de una ventana modal interactiva** que se
 
 Al ejecutar el proyecto, se observa una página con un botón que al hacer clic abre una ventana modal con un mensaje especial. El modal puede cerrarse haciendo clic en el botón "Cerrar" o en el fondo semi-transparente.
 
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" style="padding: 0 20px;">
+        <img src="img/evidencia1.png" alt="Evidencia 1" width="600"/><br/>        
+      </td>
+      <td align="center" style="padding: 0 20px;">
+        <img src="img/evidencia2.png"" alt="Evidencia 2" width="400"/><br/>        
+      </td>
+    </tr>
+  </table>
+</div>
+
 Adicionalmente, se incorporaron **decoraciones visuales (corazones flotando)** y un estilo adaptado a la temática del taller.
 
 [⬆️ Volver al índice](#índice)
