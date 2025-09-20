@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amor y Amistad 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main>
+    <h1>Mi Proyecto de Ventanas Modales</h1>
+    <h2 class="slogan">Especial: Amor y Amistad 💌</h2>
+
+    <p>Pulsa el botón para ver un mensaje especial</p>
+    <div>
+      <button id="abrirModalBtn" type="button">💖 Abrir mensaje 💖</button>
+      <img src="img/mano.png" alt="mano señalando" class="mano">
+    </div>
+    
+  </main>
+   <div class="corazones esquina-izquierda">💗 💖 💕 💝 💓</div>
+   <div class="corazones esquina-derecha">💗 💖 💕 💝 💓</div>
+
+  <!-- Overlay del modal -->
+  <div id="modalOverlay" class="overlay" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal">
+      <h2 id="modalTitle">💝 ¡Feliz Mes del Amor y la Amistad! 💝</h2>
+      <p>
+        Gracias por ser parte de este proyecto 💗<br>
+        Recuerda siempre compartir una sonrisa y un gesto amable 🌸
+      </p>
+      <button id="cerrarModalBtn" type="button">Cerrar 💌</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <div id="corazones"></div>
+
+<script>
+  const contenedor = document.getElementById('corazones');
+
+  for (let i = 0; i < 25; i++) { // cantidad de corazones
+    const c = document.createElement('div');
+    c.className = 'corazon';
+    c.textContent = '❤️';
+    c.style.left = Math.random() * 100 + 'vw';         // posición horizontal aleatoria
+    c.style.setProperty('--tamaño', (16 + Math.random() * 40) + 'px'); // tamaño aleatorio
+    c.style.setProperty('--duracion', (8 + Math.random() * 10) + 's'); // velocidad distinta
+    c.style.setProperty('--x', (Math.random() * 100 - 50) + 'px');     // leve movimiento horizontal
+    contenedor.appendChild(c);
+  }
+</script>
+
+
+</body>
+</html>
+

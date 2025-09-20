@@ -1,0 +1,244 @@
+/* Estilo general con colores suaves */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.5;
+  color: #4a2c2c;
+  background: linear-gradient(135deg, #ffe6eb, #fff7fa);
+}
+
+/* Decoración de corazones flotando en el fondo */
+body::before {
+  content: "💗 💖 💕 💝 💓";
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 2rem;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Corazones esquina superior derecha */
+body::after {
+  content: "💗 💖 💕 💝 💓";
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Corazones esquina inferior izquierda */
+.corner-bottom-left {
+  content: "💗 💖 💕 💝 💓";
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 2rem;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Contenedor invisible para los corazones flotantes */
+#corazones {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* que no interfiera con clics */
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Cada corazón individual */
+.corazon {
+  position: absolute;
+  color: red;
+  font-size: var(--tamaño, 24px);
+  top: 100%;
+  animation: flotar var(--duracion, 10s) linear infinite;
+  opacity: 0.7;
+}
+
+.corazones {
+  position: fixed;
+  display: flex;
+  gap: 10px;             /* más espacio entre corazones */
+  font-size: 2rem;       /* más grandes */
+  opacity: 0.15;         /* mucho más transparente, estilo marca de agua */
+  color: #ff4d6d;        /* tono rosa/rojo suave */
+  pointer-events: none;
+  z-index: 100;          /* por debajo del contenido */
+}
+
+
+.corazones.arriba {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.corazones.esquina-izquierda {
+  bottom: 10px;
+  left: 10px;
+}
+
+.corazones.esquina-derecha {
+  bottom: 10px;
+  right: 10px;
+}
+
+
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-120vh) translateX(var(--x, 0)) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Asegura que tu contenido quede encima de los corazones */
+main {
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  max-width: 800px;         /* limita el ancho para que no quede muy largo */
+  margin: 0 auto;            /* centra horizontalmente */
+  text-align: center;        /* centra el texto dentro */
+  padding: 2rem;              /* da aire alrededor */
+}
+
+
+h1 {
+  margin-top: 0;
+  color: #d6336c;
+}
+
+.slogan {
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: #a83c61;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+/* Overlay oculto por defecto */
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Mostrar overlay */
+.overlay.visible {
+  display: flex;
+   opacity: 1; 
+}
+
+.overlay.visible .modal {
+  transform: scale(1);         /* crece al tamaño normal */
+  opacity: 1;                  /* aparece suave */
+}
+
+.modal {
+  position: relative;
+  background: white;          /* fondo blanco para que se lea bien el texto */
+  padding: 2.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;          /* oculta lo que sobresalga del borde redondeado */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);  /* sombra suave */
+
+  transform: scale(0.8);       /* arranca más pequeño */
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Imagen de Minnie de fondo semitransparente */
+.modal::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("img/minnie.png") center/contain no-repeat;
+  opacity: 0.15;              /* hace que sea suave y no opaque el texto */
+  z-index: 0;                 /* queda detrás del texto */
+}
+
+/* Asegura que el texto quede encima de la imagen */
+.modal * {
+  position: relative;
+  z-index: 1;
+}
+
+.modal p {
+  color: #87089d; /* 💖 elige el color que prefieras */
+}
+
+/* Botones */
+button {
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background: #d6336c;
+  color: white;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.boton-con-mano {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px; /* espacio entre el botón y la imagen */
+  justify-content: center; /* centra todo en la página */
+  margin-top: 1.5rem;
+  vertical-align: middle;   /* ayuda extra para alinear mejor */
+}
+
+.mano {
+  width: 50px; /* tamaño mediano */
+  height: auto;  
+  animation: mover 1s infinite alternate;
+  mix-blend-mode: multiply;
+}   
+
+/* animación suave para que llame la atención */
+@keyframes mover {
+  from { transform: translateX(0); }
+  to { transform: translateX(8px); }
+}
+
+
+button:hover {
+  background: #b42a5a;
+}
+
+#cerrarModalBtn {
+  background: #888;
+}
+
+#cerrarModalBtn:hover {
+  background: #666;
+}
