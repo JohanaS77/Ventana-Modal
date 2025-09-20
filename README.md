@@ -5,7 +5,7 @@ Este proyecto corresponde al taller de **Introducción a los Lenguajes de Intern
 ---
 
 <a name="indice"></a>
-## <img width="145" height="61" alt="Indice" src="img/indice.png" />
+## <img width="105" height="61" alt="Indice" src="img/indice.png" />
 
 1. [Descripción del trabajo](#descripción-del-trabajo)
 2. [Objetivos de Aprendizaje](#objetivos-de-aprendizaje)
@@ -19,7 +19,7 @@ Este proyecto corresponde al taller de **Introducción a los Lenguajes de Intern
 ---
 
 <a name="descripción-del-trabajo"></a>
-## <img width="460" height="57" alt="Descripción" src="img/descripcion.png" />
+## <img width="360" height="67" alt="Descripción" src="img/descripcion.png" />
 
 El proyecto consiste en la **creación de una ventana modal interactiva** que se activa mediante un botón. El modal incluye un título, un mensaje y un botón para cerrarlo. Además, se implementaron mejoras estéticas y temáticas relacionadas con el mes del **Amor y la Amistad**, agregando animaciones y elementos decorativos.
 [⬆️ Volver al índice](#índice
@@ -27,7 +27,7 @@ El proyecto consiste en la **creación de una ventana modal interactiva** que se
 ---
 
 <a name="objetivos-de-aprendizaje"></a>
-## <img width="460" height="57" alt="Objetivos" src="img/objetivos.png" />
+## <img width="360" height="67" alt="Objetivos" src="img/objetivos.png" />
 
 * Aplicar la **estructura de HTML** para organizar el contenido de la página.
 * Implementar **CSS** para los estilos, colores, fondos y animaciones.
@@ -39,7 +39,7 @@ El proyecto consiste en la **creación de una ventana modal interactiva** que se
 ---
 
 <a name="tecnologías-usadas"></a>
-## <img width="460" height="57" alt="Tecnologias" src="img/tecnologia.png" />
+## <img width="260" height="67" alt="Tecnologias" src="img/tecnologia.png" />
 
 * **HTML5** → Estructura del contenido.
 * **CSS3** → Estilos, animaciones y diseño visual.
@@ -50,7 +50,7 @@ El proyecto consiste en la **creación de una ventana modal interactiva** que se
 ---
 
 <a name="requisitos-técnicos"></a>
-## <img width="460" height="57" alt="Requisitos" src="img/requisitos.png" />
+## <img width="260" height="67" alt="Requisitos" src="img/requisitos.png" />
 
 * Navegador actualizado (Chrome, Edge, Firefox).
 * Editor de código (Visual Studio Code recomendado).
@@ -65,7 +65,7 @@ El proyecto consiste en la **creación de una ventana modal interactiva** que se
 ---
 
 <a name="resultado-final"></a>
-## <img width="460" height="57" alt="Resultados" src="img/resultado.png" />
+## <img width="260" height="67" alt="Resultados" src="img/resultado.png" />
 
 Al ejecutar el proyecto, se observa una página con un botón que al hacer clic abre una ventana modal con un mensaje especial. El modal puede cerrarse haciendo clic en el botón "Cerrar" o en el fondo semi-transparente.
 
@@ -76,7 +76,7 @@ Adicionalmente, se incorporaron **decoraciones visuales (corazones flotando)** y
 ---
 
 <a name="recomendaciones"></a>
-## <img width="460" height="57" alt="Recomendaciones" src="img/recomendaciones.png" />
+## <img width="260" height="67" alt="Recomendaciones" src="img/recomendaciones.png" />
 
 
 [⬆️ Volver al índice](#índice)
@@ -89,7 +89,7 @@ Adicionalmente, se incorporaron **decoraciones visuales (corazones flotando)** y
 ---
 
 <a name="conclusiones"></a>
-## <img width="360" height="57" alt="Conclusiones" src="img/conclusiones.png" />
+## <img width="260" height="67" alt="Conclusiones" src="img/conclusiones.png" />
 
 * La creación de una ventana modal permite comprender la integración de **HTML, CSS y JavaScript** en un solo componente práctico.
 * Las animaciones y estilos visuales enriquecen la experiencia del usuario, haciendo la interfaz más atractiva.
@@ -100,7 +100,7 @@ Adicionalmente, se incorporaron **decoraciones visuales (corazones flotando)** y
 ---
 
 <a name="desarrolladora"></a>
-## <img src="img/desarrolladora.png" alt="Desarrolladora" width="380">
+## <img src="img/desarrolladora.png" alt="Desarrolladora" width="300">
 
 Este proyecto fue desarrollado por Johana Jazmín Saavedra, estudiante de cuarto semestre en Técnica profesional en programación de aplicaciones de software de la Fundación Universitaria Compensar. Con una participación activa en la creación y desarrollo del proyecto.
 
